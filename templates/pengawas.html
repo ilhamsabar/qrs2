@@ -1,0 +1,52 @@
+﻿
+<ion-view view-title="Pengawas" >
+    <ion-content>
+        <div class="bar bar-subheader bar-stable static text-center">
+            <strong class="title">Data Pengawas</strong>
+        </div>
+        <div class="im-wrapper">
+            <div ng-if="pengawas[0].foto==null">
+                <center><img src="img/no-photo.gif"></img></center>               
+            </div>
+            <div ng-if="pengawas[0].foto!=null">
+
+            </div>
+            <br/><br/>
+            <table>
+                <tr>
+                    <td style="width:35%">NIP</td>
+                    <td style="width:5%">:</td>
+                    <td style="width:60%">{{pengawas[0].nip}}</td>
+                </tr>
+                 <tr>
+                    <td>Nama</td>
+                    <td>:</td>
+                    <td>{{pengawas[0].nama}}</td>
+                </tr>
+                <tr>
+                    <td>No. Telpon</td>
+                    <td>:</td>
+                    <td>{{pengawas[0].no_telp}}</td>
+                </tr>
+                <tr>
+                    <td>Alamat Kantor</td>
+                    <td>:</td>
+                    <td>{{pengawas[0].alamat_kantor}}</td>
+                </tr>
+                <tr>
+                    <td>Jenis Pengawas</td>
+                    <td>:</td>
+                    <td>{{pengawas[0].nama_jenis_pengawas}}</td>
+                </tr>
+                <tr>
+                    <td>Pangkat/Golongan</td>
+                    <td>:</td>
+                    <td>{{pengawas[0].nama_pangkat}}/{{pengawas[0].kode_pangkat}}</td>
+                </tr>
+            </table>
+            
+        </div>
+        <br />
+        <br />
+    </ion-content>
+</ion-view>

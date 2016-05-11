@@ -1,0 +1,354 @@
+﻿
+<ion-view view-title="Instrumen MA.1" >
+    <ion-content>
+        <div class="bar bar-subheader bar-stable static text-center">
+            <strong class="title">Instrumen Supervisi</strong>
+        </div>
+        <div class="im-wrapper">
+            <!-- Ionic Components -->
+            <center><h4>Instrumen Supervisi Penerimaan Peserta Didik Baru (PPDB)</h4></center><br/>
+            <!-- <ion-scroll direction="xy"> -->
+            A. DATA PESERTA DIDIK
+           <table class="data-table" style="table-layout: fixed; width: 601px">
+            <colgroup>
+            <col style="width: 36px">
+            <col style="width: 272px">
+            <col style="width: 127px">
+            <col style="width: 21px">
+            <col style="width: 60px">
+            <col style="width: 55px">
+            <col style="width: 120px">
+            </colgroup>
+              <tr>
+                <th>NO.</th>
+                <th>ASPEK YANG DIMONITOR</th>
+                <th colspan="4">HASIL MONITORING</th>
+                <th>KETERANGAN.</th>
+              </tr>
+              <tr>
+                <td rowspan="5">1.</td>
+                <td rowspan="5">Jumlah Peserta Didik lulusan tahun pelajaran yang lalu</td>
+                <td class="middle-row">IPA</td>
+                <td class="middle-row">=</td>
+                <td><input type="number" style="width: 50px;" ng-change="total_1()" ng-model="model.ma1_1"/></td>
+                <td class="middle-row">orang</td>
+                <td class="middle-row"><input type="text" style="width: 100px;" ng-model="model.ma1_2"/></td>
+              </tr>
+              <tr>
+                <td class="middle-row">IPS</td>
+                <td class="middle-row">=</td>
+                <td><input type="number" style="width: 50px;" ng-change="total_1()" ng-model="model.ma1_3"/></td>
+                <td class="middle-row">orang</td>
+                <td class="middle-row"><input type="text" style="width: 100px;" ng-model="model.ma1_4"/></td>
+              </tr>
+              <tr>
+                <td class="middle-row">Bahasa</td>
+                <td class="middle-row">=</td>
+                <td><input type="number" style="width: 50px;" ng-change="total_1()" ng-model="model.ma1_5"/></td>
+                <td class="middle-row">orang</td>
+                <td class="middle-row"><input type="text" style="width: 100px;" ng-model="model.ma1_6"/></td>
+              </tr>
+              <tr>
+                <td class="middle-row">Keagamaan</td>
+                <td class="middle-row">=</td>
+                <td><input type="number" style="width: 50px;" ng-change="total_1()" ng-model="model.ma1_7"/></td>
+                <td class="middle-row">orang</td>
+                <td class="middle-row"><input type="text" style="width: 100px;" ng-model="model.ma1_8"/></td>
+              </tr>
+              <tr>
+                <td class="middle-row">Jumlah</td>
+                <td class="middle-row">=</td>
+                <td class="middle-row"><input type="text" style="width: 50px;border:none;" disabled ng-model="model.nilai_total_1"/></td>
+                <td class="middle-row">orang</td>
+                <td></td>
+              </tr>
+
+              <tr>
+                <td rowspan="3">2.</td>
+                <td rowspan="3">Jumlah Pendaftar Calon Peserta Didik Baru</td>
+                <td class="middle-row">L</td>
+                <td class="middle-row">=</td>
+                <td><input type="number" style="width: 50px;" ng-change="total_2()" ng-model="model.ma1_9"/></td>
+                <td class="middle-row">orang</td>
+                <td><input type="text" style="width: 100px;" ng-model="model.ma1_10"/></td>
+              </tr>
+              <tr>
+                <td class="middle-row">P</td>
+                <td class="middle-row">=</td>
+                <td><input type="number" style="width: 50px;" ng-change="total_2()" ng-model="model.ma1_11"/></td>
+                <td class="middle-row">orang</td>
+                <td><input type="text" style="width: 100px;" ng-model="model.ma1_12"/></td>
+              </tr>
+              <tr>
+                <td class="middle-row">Jumlah</td>
+                <td class="middle-row">=</td>
+                <td><input type="text" style="width: 50px;border:none;" disabled ng-model="model.nilai_total_2"/></td>
+                <td class="middle-row">orang</td>
+                <td></td>
+              </tr>
+
+               <tr>
+                <td rowspan="3">3.</td>
+                <td rowspan="3">Jumlah Peserta Didik yang baru diterima</td>
+                <td class="middle-row">L</td>
+                <td class="middle-row">=</td>
+                <td><input type="number" style="width: 50px;" ng-change="total_3()" ng-model="model.ma1_13"/></td>
+                <td class="middle-row">orang</td>
+                <td><input type="text" style="width: 100px;" ng-model="model.ma1_14"/></td>
+              </tr>
+              <tr>
+                <td class="middle-row">P</td>
+                <td class="middle-row">=</td>
+                <td><input type="number" style="width: 50px;" ng-change="total_3()" ng-model="model.ma1_15"/></td>
+                <td class="middle-row">orang</td>
+                <td><input type="text" style="width: 100px;" ng-model="model.ma1_16"/></td>
+              </tr>
+              <tr>
+               <td class="middle-row">Jumlah</td>
+                <td class="middle-row">=</td>
+                <td><input type="text" style="width: 50px;border:none;" disabled ng-model="model.nilai_total_3"/></td>
+                <td class="middle-row">orang</td>
+                <td></td>
+              </tr>
+
+               <tr>
+                <td rowspan="3">4.</td>
+                <td rowspan="3">Jumlah Peserta Didik yang baru diterima melalui jalur prestasi</td>
+                <td class="middle-row">L</td>
+                <td class="middle-row">=</td>
+                <td><input type="number" style="width: 50px;" ng-change="total_4()" ng-model="model.ma1_17"/></td>
+                <td class="middle-row">orang</td>
+                <td><input type="text" style="width: 100px;" ng-model="model.ma1_18"/></td>
+              </tr>
+              <tr>
+                <td class="middle-row">P</td>
+                <td class="middle-row">=</td>
+                <td><input type="number" style="width: 50px;" ng-change="total_4()" ng-model="model.ma1_19"/></td>
+                <td class="middle-row">orang</td>
+                <td><input type="text" style="width: 100px;" ng-model="model.ma1_20"/></td>
+              </tr>
+              <tr>
+                <td class="middle-row">Jumlah</td>
+                <td class="middle-row">=</td>
+                <td><input type="text" style="width: 50px;border:none;" disabled ng-model="model.nilai_total_4"/></td>
+                <td class="middle-row">orang</td>
+                <td></td>
+              </tr>
+
+               <tr>
+                <td rowspan="3">5.</td>
+                <td rowspan="3">Jumlah Peserta Didik yang baru diterima melalui seleksi</td>
+                <td class="middle-row">L</td>
+                <td class="middle-row">=</td>
+                <td><input type="number" style="width: 50px;" ng-change="total_5()" ng-model="model.ma1_21"/></td>
+                <td class="middle-row">orang</td>
+                <td><input type="text" style="width: 100px;" ng-model="model.ma1_22"/></td>
+              </tr>
+              <tr>
+                <td class="middle-row">P</td>
+                <td class="middle-row">=</td>
+                <td><input type="number" style="width: 50px;" ng-change="total_5()" ng-model="model.ma1_23"/></td>
+                <td class="middle-row">orang</td>
+                <td><input type="text" style="width: 100px;" ng-model="model.ma1_24"/></td>
+              </tr>
+              <tr>
+               <td class="middle-row">Jumlah</td>
+                <td class="middle-row">=</td>
+                <td><input type="text" style="width: 50px;border:none;" disabled ng-model="model.nilai_total_5"/></td>
+                <td class="middle-row">orang</td>
+                <td></td>
+              </tr>
+
+              <tr>
+                <td>6.</td>
+                <td>Passing grade dan skor tertinggi jalur akademik</td>
+                <td colspan="4" class="middle-row"><input type="number" style="width: 100px;" ng-model="model.ma1_25"/></td>
+                <td class="middle-row"><input type="text" style="width: 100px;" ng-model="model.ma1_26"/></td>
+              </tr>
+
+              <tr>
+                <td>6.</td>
+                <td>Jumlah asal pendaftar</td>
+                <td colspan="4">
+                    <center>Jumlah peserta didik
+                        <table class="data-table">
+                              <tr>
+                                <td>SMP</td>
+                                <td>MTs</td>
+                                <td>Sederajat</td>
+                                <td>Jumlah</td>
+                              </tr>  
+                              <tr>
+                                <td><input type="number" style="width: 50px;" ng-change="total_6()" ng-model="model.ma1_27"/></td>
+                                <td><input type="number" style="width: 50px;" ng-change="total_6()" ng-model="model.ma1_28"/></td>
+                                <td><input type="number" style="width: 50px;" ng-change="total_6()" ng-model="model.ma1_29"/></td>
+                                <td><input type="text" style="width: 50px;border:none;" disabled ng-model="model.nilai_total_6"/></td>
+                              </tr> 
+                        </table>    
+                    </center>
+
+                </td>
+                <td>
+                </td>
+              </tr>
+
+            </table>
+
+            <br/>
+            <br/>
+            <br/>
+
+            B. ADMINISTRASI
+
+            <table class="data-table" style="table-layout: fixed; width: 611px">
+                <colgroup>
+                <col style="width: 38px">
+                <col style="width: 314px">
+                <col style="width: 45px">
+                <col style="width: 94px">
+                <col style="width: 120px">
+                </colgroup>
+                  <tr>
+                    <th>No.</th>
+                    <th>ASPEK YANG DIMONITOR</th>
+                    <th>ADA</th>
+                    <th>TIDAK ADA</th>
+                    <th>KETERANGAN</th>
+                  </tr>
+                  <tr>
+                    <td>1.</td>
+                    <td>PERSIAPAN</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>a. Tata cara pendaftaran</td>
+                    <td class="middle-row"><center><input name="radio_1" type="radio" ng-model="model.ma1_30"/></center></td>
+                    <td class="middle-row"><center><input name="radio_1" type="radio" ng-model="model.ma1_30"/></center></td>
+                    <td class="middle-row"><input type="text" style="width: 100px;" ng-model="model.ma1_31"/></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>b. SK Kepanitiaan</td>
+                    <td class="middle-row"><center><input name="radio_2" type="radio" ng-model="model.ma1_32"/></center></td>
+                    <td class="middle-row"><center><input name="radio_2" type="radio" ng-model="model.ma1_32"/></center></td>
+                    <td class="middle-row"><input type="text" style="width: 100px;" ng-model="model.ma1_33"/></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>c. Program Penerimaan Peserta Didik Baru</td>
+                    <td class="middle-row"><center><input name="radio_3" type="radio" ng-model="model.ma1_34"/></center></td>
+                    <td class="middle-row"><center><input name="radio_3" type="radio" ng-model="model.ma1_34"/></center></td>
+                    <td class="middle-row"><input type="text" style="width: 100px;" ng-model="model.ma1_35"/></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>d. Buku Pendaftaran</td>
+                    <td class="middle-row"><center><input name="radio_4" type="radio" ng-model="model.ma1_36"/></center></td>
+                    <td class="middle-row"><center><input name="radio_4" type="radio" ng-model="model.ma1_36"/></center></td>
+                    <td class="middle-row"><input type="text" style="width: 100px;" ng-model="model.ma1_37"/></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>e. Formulir Pendaftaran</td>
+                    <td class="middle-row"><center><input name="radio_5" type="radio" ng-model="model.ma1_38"/></center></td>
+                    <td class="middle-row"><center><input name="radio_5" type="radio" ng-model="model.ma1_38"/></center></td>
+                    <td class="middle-row"><input type="text" style="width: 100px;" ng-model="model.ma1_39"/></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>f. Administrasi Keuangan</td>
+                    <td class="middle-row"><center><input name="radio_6" type="radio" ng-model="model.ma1_40"/></center></td>
+                    <td class="middle-row"><center><input name="radio_6" type="radio" ng-model="model.ma1_40"/></center></td>
+                    <td class="middle-row"><input type="text" style="width: 100px;" ng-model="model.ma1_41"/></td>
+                  </tr>
+
+                  <tr>
+                    <td>2.</td>
+                    <td>PELAKSANAAN</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>a. Jadwal Pendaftaran</td>
+                    <td class="middle-row"><center><input name="radio_7" type="radio" ng-model="model.ma1_42"/></center></td>
+                    <td class="middle-row"><center><input name="radio_7" type="radio" ng-model="model.ma1_42"/></center></td>
+                    <td class="middle-row"><input type="text" style="width: 100px;" ng-model="model.ma1_43"/></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>b. Jadwal Seleksi</td>
+                    <td class="middle-row"><center><input name="radio_8" type="radio" ng-model="model.ma1_44"/></center></td>
+                    <td class="middle-row"><center><input name="radio_8" type="radio" ng-model="model.ma1_44"/></center></td>
+                    <td class="middle-row"><input type="text" style="width: 100px;" ng-model="model.ma1_45"/></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>c. Jadwal Pengumuman</td>
+                    <td class="middle-row"><center><input name="radio_9" type="radio" ng-model="model.ma1_46"/></center></td>
+                    <td class="middle-row"><center><input name="radio_9" type="radio" ng-model="model.ma1_46"/></center></td>
+                    <td class="middle-row"><input type="text" style="width: 100px;" ng-model="model.ma1_47"/></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>d. Jadwal Daftar Ulang</td>
+                    <td class="middle-row"><center><input name="radio_10" type="radio" ng-model="model.ma1_48"/></center></td>
+                    <td class="middle-row"><center><input name="radio_10" type="radio" ng-model="model.ma1_48"/></center></td>
+                    <td class="middle-row"><input type="text" style="width: 100px;" ng-model="model.ma1_49"/></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>e. Data hasil seleksi</td>
+                    <td class="middle-row"><center><input name="radio_11" type="radio" ng-model="model.ma1_50"/></center></td>
+                    <td class="middle-row"><center><input name="radio_11" type="radio" ng-model="model.ma1_50"/></center></td>
+                    <td class="middle-row"><input type="text" style="width: 100px;" ng-model="model.ma1_51"/></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>f. Data peserta didik yang diterima</td>
+                    <<td class="middle-row"><center><input name="radio_12" type="radio" ng-model="model.ma1_52"/></center></td>
+                    <td class="middle-row"><center><input name="radio_12" type="radio" ng-model="model.ma1_52"/></center></td>
+                    <td class="middle-row"><input type="text" style="width: 100px;" ng-model="model.ma1_53"/></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>f. Data peserta didik yang tidak diterima</td>
+                    <td class="middle-row"><center><input name="radio_13" type="radio" ng-model="model.ma1_54"/></center></td>
+                    <td class="middle-row"><center><input name="radio_13" type="radio" ng-model="model.ma1_54"/></center></td>
+                    <td class="middle-row"><input type="text" style="width: 100px;" ng-model="model.ma1_55"/></td>
+                  </tr>
+                  <tr>
+                    <td>3.</td>
+                    <td>PELAPORAN</td>
+                    <td class="middle-row"><center><input name="radio_14" type="radio" ng-model="model.ma1_56"/></center></td>
+                    <td class="middle-row"><center><input name="radio_14" type="radio" ng-model="model.ma1_56"/></center></td>
+                    <td class="middle-row"><input type="text" style="width: 100px;" ng-model="model.ma1_57"/></td>
+                  </tr>
+
+                </table>
+                <br/>
+                <br/>
+                Kesimpulan / Saran
+
+                <textarea ng-model="model.ma1_58" cols="85" rows="5" style="border: 1px solid black;"></textarea>
+
+                <br/><br/>
+                <button class="button" style="background-color: #52D017;" ng-click="saveMA1()">
+                    Simpan
+                </button>
+
+            <!-- </ion-scroll> -->
+        </div>
+
+        <br />
+        <br />
+
+
+
+
+    </ion-content>
+</ion-view>

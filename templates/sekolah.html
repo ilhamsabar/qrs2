@@ -1,0 +1,45 @@
+﻿
+<ion-view view-title="Sekolah" >
+    <ion-content>
+        <div class="bar bar-subheader bar-stable static text-center">
+            <strong class="title">Informasi Sekolah</strong>
+        </div>
+        <div class="im-wrapper">
+            <!-- Ionic Components -->
+           <table>
+                <tr>
+                    <td style="width:35%">Kode Sekolah</td>
+                    <td style="width:5%">:</td>
+                    <td style="width:60%">{{tsekolah.kode}}</td>
+                </tr>
+                 <tr>
+                    <td>Nama Sekolah</td>
+                    <td>:</td>
+                    <td>{{tsekolah.nama}}</td>
+                </tr>
+                <tr>
+                    <td>Status Sekolah</td>
+                    <td>:</td>
+                    <td>{{sekolah[0].status_sekolah}}</td>
+                </tr>
+                <tr>
+                    <td>Alamat Sekolah</td>
+                    <td>:</td>
+                    <td>{{tsekolah.alamat}}</td>
+                </tr>
+                <tr>
+                    <td>No. Telpon Sekolah</td>
+                    <td>:</td>
+                    <td>{{sekolah[0].no_telp_sekolah}}</td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td>:</td>
+                    <td>{{sekolah[0].email_sekolah}}</td>
+                </tr>
+            </table>
+        </div>
+        <br />
+        <br />
+    </ion-content>
+</ion-view>

@@ -1,0 +1,24 @@
+
+<ion-view view-title="Pilih Sekolah" >
+    <ion-content>
+        <div class="bar bar-subheader bar-balanced static text-center">
+            <strong class="title">Informasi</strong>
+        </div>
+        <div class="im-wrapper">
+            <!-- Ionic Components -->
+            <ion-list>
+              <ion-item ng-repeat="sekolah in sekolahs" data-ng-click="selectedElem(sekolah)">
+                <a class="item" href="#" style="border : 1px solid gray;">
+                   {{sekolah.nama}}!
+                </a>
+              </ion-item>
+            </ion-list>
+        </div>
+        <br />
+
+      
+
+        <br />
+        <br />
+    </ion-content>
+</ion-view>

@@ -1,0 +1,199 @@
+﻿
+<ion-view view-title="Instrumen MA.3" >
+    <ion-content>
+        <div class="bar bar-subheader bar-stable static text-center">
+            <strong class="title">Informasi</strong>
+        </div>
+        <div class="im-wrapper">
+            <center><h4>Instrumen Supervisi Masa Orientasi Peserta Didik (MOPD)</h4></center><br/>
+            <!-- <ion-scroll direction="xy"> -->
+                I. DATA PESERTA DIDIK
+                <br/><br/>
+                <table class="data-table" style="table-layout: fixed; width: 624px">
+                    <colgroup>
+                    <col style="width: 48px">
+                    <col style="width: 47px">
+                    <col style="width: 248px">
+                    <col style="width: 21px">
+                    <col style="width: 116px">
+                    <col style="width: 144px">
+                    </colgroup>
+                      <tr>
+                        <td>1.</td>
+                        <td colspan="2">Jumlah Peserta Didik Kelas X yang diterima</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td class="middle-row">a.</td>
+                        <td class="middle-row">Laki-laki</td>
+                        <td class="middle-row">:</td>
+                        <td class="middle-row"><input type="text" style="width: 80px;"/></td>
+                        <td class="middle-row">orang</td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td class="middle-row">b.</td>
+                        <td class="middle-row">Perempuan</td>
+                        <td class="middle-row">:</td>
+                        <td class="middle-row"><input type="text" style="width: 80px;"/></td>
+                        <td class="middle-row">orang</td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td class="middle-row"></td>
+                        <td class="middle-row">Jumlah</td>
+                        <td class="middle-row">:</td>
+                        <td class="middle-row"><input type="text" style="width: 80px;"/></td>
+                        <td class="middle-row">orang</td>
+                      </tr>
+                      <tr>
+                        <td>2.</td>
+                        <td class="middle-row" colspan="2">Jumlah Peserta Didik yang mengikuti MOPD</td>
+                        <td class="middle-row">:</td>
+                        <td class="middle-row"><input type="text" style="width: 80px;"/></td>
+                        <td class="middle-row">orang</td>
+                      </tr>
+                    </table>  
+                    <br/>
+                    <br/>
+                     II. ADMINISTRASI
+
+                    <table class="data-table" style="table-layout: fixed; width: 637px">
+                    <colgroup>
+                    <col style="width: 43px">
+                    <col style="width: 305px">
+                    <col style="width: 93px">
+                    <col style="width: 49px">
+                    <col style="width: 49px">
+                    <col style="width: 47px">
+                    <col style="width: 51px">
+                    </colgroup>
+                      <tr>
+                        <th rowspan="2">No.</th>
+                        <th rowspan="2">Aspek Yang Dimonitor</th>
+                        <th rowspan="2">Tidak Ada</th>
+                        <th colspan="4">Ada</th>
+                      </tr>
+                      <tr>
+                        <th>4</th>
+                        <th>3</th>
+                        <th>2</th>
+                        <th>1</th>
+                      </tr>
+                      <tr>
+                        <td>1.</td>
+                        <td>Program MOPD</td>
+                        <td class="middle-row"><center><input name="radio_1" type="radio" /></center></td>
+                        <td class="middle-row"><center><input name="radio_1" type="radio" /></center></td>
+                        <td class="middle-row"><center><input name="radio_1" type="radio" /></center></td>
+                        <td class="middle-row"><center><input name="radio_1" type="radio" /></center></td>
+                        <td class="middle-row"><center><input name="radio_1" type="radio" ng-model="model.ma2_5"/></center></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>2.</td>
+                        <td>SK/Surat Tugas Panitia MOPD</td>
+                         <td class="middle-row"><center><input name="radio_2" type="radio" /></center></td>
+                        <td class="middle-row"><center><input name="radio_2" type="radio" /></center></td>
+                        <td class="middle-row"><center><input name="radio_2" type="radio" /></center></td>
+                        <td class="middle-row"><center><input name="radio_2" type="radio" /></center></td>
+                        <td class="middle-row"><center><input name="radio_2" type="radio" ng-model="model.ma2_5"/></center></td>
+                      </tr>
+                      <tr>
+                        <td>3.</td>
+                        <td>Buku Panduan Peserta Didik</td>
+                         <td class="middle-row"><center><input name="radio_3" type="radio" /></center></td>
+                        <td class="middle-row"><center><input name="radio_3" type="radio" /></center></td>
+                        <td class="middle-row"><center><input name="radio_3" type="radio" /></center></td>
+                        <td class="middle-row"><center><input name="radio_3" type="radio" /></center></td>
+                        <td class="middle-row"><center><input name="radio_3" type="radio" ng-model="model.ma2_5"/></center></td>
+                      </tr>
+                      <tr>
+                        <td>4.</td>
+                        <td>Absensi Kehadiran Peserta Didik</td>
+                        <td class="middle-row"><center><input name="radio_4" type="radio" /></center></td>
+                        <td class="middle-row"><center><input name="radio_4" type="radio" /></center></td>
+                        <td class="middle-row"><center><input name="radio_4" type="radio" /></center></td>
+                        <td class="middle-row"><center><input name="radio_4" type="radio" /></center></td>
+                        <td class="middle-row"><center><input name="radio_4" type="radio" ng-model="model.ma2_5"/></center></td>
+                      </tr>
+                      <tr>
+                        <td>5.</td>
+                        <td>Absensi kehadiran Panitia/Pembina/ Pembimbing</td>
+                         <td class="middle-row"><center><input name="radio_5" type="radio" /></center></td>
+                        <td class="middle-row"><center><input name="radio_5" type="radio" /></center></td>
+                        <td class="middle-row"><center><input name="radio_5" type="radio" /></center></td>
+                        <td class="middle-row"><center><input name="radio_5" type="radio" /></center></td>
+                        <td class="middle-row"><center><input name="radio_5" type="radio" ng-model="model.ma2_5"/></center></td>
+                      </tr>
+                      <tr>
+                        <td>6.</td>
+                        <td>Jadwal Kegiatan selama pelaksanaan MOPD</td>
+                        <td class="middle-row"><center><input name="radio_6" type="radio" /></center></td>
+                        <td class="middle-row"><center><input name="radio_6" type="radio" /></center></td>
+                        <td class="middle-row"><center><input name="radio_6" type="radio" /></center></td>
+                        <td class="middle-row"><center><input name="radio_6" type="radio" /></center></td>
+                        <td class="middle-row"><center><input name="radio_6" type="radio" ng-model="model.ma2_5"/></center></td>
+                      </tr>
+                    </table>
+                    <br/><br/>
+
+                    III. SUMBER BIAYA
+                    <table class="data-table" style="table-layout: fixed; width: 592px">
+                        <colgroup>
+                        <col style="width: 33px">
+                        <col style="width: 220px">
+                        <col style="width: 137px">
+                        <col style="width: 202px">
+                        </colgroup>
+                          <tr>
+                            <th>No.</th>
+                            <th>Sumber Biaya</th>
+                            <th>Isi</th>
+                            <th>Keterangan</th>
+                          </tr>
+                          <tr>
+                            <td class="middle-row">1.</td>
+                            <td class="middle-row">Peserta Didik</td>
+                            <td class="middle-row"><input type="text" style="width: 120px;"/></td>
+                            <td class="middle-row"><input type="text" style="width: 170px;"/></td>
+                          </tr>
+                          <tr>
+                            <td class="middle-row">2.</td>
+                            <td class="middle-row">Pemerintah</td>
+                            <td class="middle-row"><input type="text" style="width: 120px;"/></td>
+                            <td class="middle-row"><input type="text" style="width: 170px;"/></td>
+                          </tr>
+                          <tr>
+                            <td class="middle-row">3.</td>
+                            <td class="middle-row">Yayasan</td>
+                            <td class="middle-row"><input type="text" style="width: 120px;"/></td>
+                            <td class="middle-row"><input type="text" style="width: 170px;"/></td>
+                          </tr>
+                          <tr>
+                            <td class="middle-row">4.</td>
+                            <td class="middle-row">Komite Madrasah</td>
+                            <td class="middle-row"><input type="text" style="width: 120px;"/></td>
+                            <td class="middle-row"><input type="text" style="width: 170px;"/></td>
+                          </tr>
+                        </table>
+
+                        <br/><br/>
+                        <button class="button" style="background-color: #52D017;" ng-click="saveMA3()">
+                            Simpan
+                        </button>
+
+            
+            <!-- </ion-scroll> -->
+
+
+        </div>
+         
+
+        <br />
+        <br />
+    </ion-content>
+</ion-view>
